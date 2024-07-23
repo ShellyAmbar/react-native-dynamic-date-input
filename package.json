@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-date-input",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react native custom component of a dynamic  date input with debounce for the final output and automatic focus for the next input.",
   "main": "index.js",
   "scripts": {
