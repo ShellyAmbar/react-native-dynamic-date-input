@@ -1,0 +1,35 @@
+{
+  "name": "react-native-dynamic-date-input",
+  "version": "1.0.0",
+  "description": "A react native custom component of a dynamic  date input with debounce for the final output and automatic focus for the next input.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShellyAmbar/react-native-dynamic-date-input.git"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "keywords": [
+    "dynamic",
+    "date",
+    "input",
+    "date",
+    "input",
+    "auto",
+    "focus",
+    "input",
+    "dynamic",
+    "date"
+  ],
+  "author": "Shelly Ambar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShellyAmbar/react-native-dynamic-date-input/issues"
+  },
+  "homepage": "https://github.com/ShellyAmbar/react-native-dynamic-date-input#readme"
+}
