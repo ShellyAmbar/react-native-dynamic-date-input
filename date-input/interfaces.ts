@@ -8,5 +8,6 @@ type DateInputProps = {
   inputMonthProps?: TextInputProps;
   inputYearProps?: TextInputProps;
   debounceDelay?: number;
+  defaultDate?: string;
 };
 export default DateInputProps;

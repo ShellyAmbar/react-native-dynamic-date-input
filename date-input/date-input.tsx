@@ -11,6 +11,7 @@ const DateInput = ({
   inputMonthProps,
   inputYearProps,
   debounceDelay = 1000,
+  defaultDate,
 }: DateInputProps) => {
   const {
     day,
@@ -22,7 +23,7 @@ const DateInput = ({
     handleDayChange,
     handleMonthChange,
     handleYearChange,
-  } = useDateInput({onComplete, debounceDelay});
+  } = useDateInput({onComplete, debounceDelay, defaultDate});
   return (
     <View style={[styles.horizontal, {...viewStyle}]}>
       <TextInput

@@ -4,13 +4,18 @@ import UseDateInputProps from "./interfaces";
 const useDateInput = ({
   onComplete,
   debounceDelay = 1000,
+  defaultDate,
 }: UseDateInputProps) => {
   const dayRef = useRef();
   const monthRef = useRef();
   const yearRef = useRef();
-  const [day, setDay] = useState("");
-  const [month, setMonth] = useState("");
-  const [year, setYear] = useState("");
+  const [day, setDay] = useState(defaultDate ? defaultDate?.slice(0, 2) : "");
+  const [month, setMonth] = useState(
+    defaultDate ? defaultDate?.slice(3, 5) : ""
+  );
+  const [year, setYear] = useState(
+    defaultDate ? defaultDate?.slice(6, 11) : ""
+  );
   const handleDayChange = (text) => {
     setDay(text);
     if (text.length === 2 && Number(text) > 0 && Number(text) < 32) {
@@ -26,6 +31,10 @@ const useDateInput = ({
   const handleYearChange = (text) => {
     setYear(text);
   };
+
+  useEffect(() => {
+    dayRef.current?.focus();
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
