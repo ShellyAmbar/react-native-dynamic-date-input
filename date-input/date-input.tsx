@@ -27,6 +27,7 @@ const DateInput = ({
   return (
     <View style={[styles.horizontal, {...viewStyle}]}>
       <TextInput
+        textAlign="center"
         ref={dayRef}
         value={day}
         onChangeText={handleDayChange}
@@ -38,6 +39,7 @@ const DateInput = ({
       />
       <View style={styles.space} />
       <TextInput
+        textAlign="center"
         ref={monthRef}
         value={month}
         onChangeText={handleMonthChange}
@@ -49,6 +51,7 @@ const DateInput = ({
       />
       <View style={styles.space} />
       <TextInput
+        textAlign="center"
         ref={yearRef}
         value={year}
         onChangeText={handleYearChange}
