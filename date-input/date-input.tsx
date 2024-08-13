@@ -1,4 +1,4 @@
-import {View, Text, TextInput} from "react-native";
+import {View, TextInput} from "react-native";
 import React from "react";
 import styles from "./date-input.styles";
 import useDateInput from "./hooks/useDateInput";
