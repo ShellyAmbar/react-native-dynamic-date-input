@@ -29,3 +29,4 @@ import DateInput from 'react-native-dynamic-date-input';
 | inputMonthProps? | TextInputProps         |
 | inputYearProps?  | TextInputProps         |
 | debounceDelay?   | number                 |
+| onWrongInput?    | () => void             |

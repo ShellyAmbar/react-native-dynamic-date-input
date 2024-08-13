@@ -5,6 +5,7 @@ import useDateInput from "./hooks/useDateInput";
 import DateInputProps from "./interfaces";
 const DateInput = ({
   onComplete,
+  onWrongInput,
   viewStyle,
   inputStyle,
   inputDayProps,
@@ -23,7 +24,7 @@ const DateInput = ({
     handleDayChange,
     handleMonthChange,
     handleYearChange,
-  } = useDateInput({onComplete, debounceDelay, defaultDate});
+  } = useDateInput({onComplete, debounceDelay, defaultDate, onWrongInput});
   return (
     <View style={[styles.horizontal, {...viewStyle}]}>
       <TextInput

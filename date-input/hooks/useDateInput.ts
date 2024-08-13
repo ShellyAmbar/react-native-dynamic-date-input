@@ -3,6 +3,7 @@ import UseDateInputProps from "./interfaces";
 
 const useDateInput = ({
   onComplete,
+  onWrongInput,
   debounceDelay = 1000,
   defaultDate,
 }: UseDateInputProps) => {
@@ -46,8 +47,10 @@ const useDateInput = ({
         Number(day) < 32
       ) {
         onComplete(`${day}/${month}/${year}`);
-        clearTimeout(timeout);
+      } else {
+        onWrongInput && onWrongInput();
       }
+      clearTimeout(timeout);
     }, debounceDelay);
 
     return () => {
